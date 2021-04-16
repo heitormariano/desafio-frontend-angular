@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Lista de Pessoas</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Naturalidade</th>
+          <th>Nacionalidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pessoa of pessoas | async">
+          <td>{{pessoa.nome}}</td>
+          <td>{{pessoa.email}}</td>
+          <td>{{pessoa.naturalidade}}</td>
+          <td>{{pessoa.nacionalidade}}</td>
+          <td>
+            <button (click)="pessoaDetalhes(pessoa.id)" class="btn btn-info" style="margin-left: 10px">Detalhes</button>
+            <button (click)="atualizarPessoa(pessoa.id)" class="btn btn-info" style="margin-left: 10px">Atualizar</button>
+            <button (click)="excluirPessoa(pessoa.id)" class="btn btn-danger" style="margin-left: 10px">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
