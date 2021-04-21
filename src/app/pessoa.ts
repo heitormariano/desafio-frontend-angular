@@ -3,7 +3,7 @@ export class Pessoa {
   nome: string;
   sexo: string;
   email: string;
-  dataNascimento: string; //verificar melhor tipo e como tratar
+  dataNascimento: string;
   naturalidade: string;
   nacionalidade: string;
   cpf: string;

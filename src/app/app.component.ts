@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Desafio Softplan - Angular e Spring Boot';
+  title = 'Aplicação Angular com Spring Boot';
 }
