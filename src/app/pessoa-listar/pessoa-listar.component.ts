@@ -17,10 +17,10 @@ export class PessoaListarComponent implements OnInit {
     private router: Router) {}
 
   ngOnInit(): void {
-    this.reloadData();
+    this.carregarDados();
   }
 
-  reloadData() {
+  carregarDados() {
     this.pessoas = this.pessoaService.getListaPessoas();
   }
 
@@ -29,7 +29,7 @@ export class PessoaListarComponent implements OnInit {
       .subscribe(
         data => {
           console.log(data);
-          this.reloadData();
+          this.carregarDados();
         },
         error => console.log(error));
   }

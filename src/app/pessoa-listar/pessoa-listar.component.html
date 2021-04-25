@@ -7,6 +7,7 @@
       <thead>
         <tr>
           <th>Nome</th>
+          <th>CPF</th>
           <th>E-mail</th>
           <th>Naturalidade</th>
           <th>Nacionalidade</th>
@@ -15,6 +16,7 @@
       <tbody>
         <tr *ngFor="let pessoa of pessoas | async">
           <td>{{pessoa.nome}}</td>
+          <td>{{pessoa.cpf}}</td>
           <td>{{pessoa.email}}</td>
           <td>{{pessoa.naturalidade}}</td>
           <td>{{pessoa.nacionalidade}}</td>
